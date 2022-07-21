@@ -14,9 +14,6 @@
 
 :root {
   --main-color: #c3073f;
-  --main-color2: #950740;
-  --main-color3: #6f2232;
-  --main-color24: #4e4e50;
   --section-BGC: #1a1a1d;
 }
 
@@ -200,6 +197,7 @@ body {
 --------------------------- */
 
 footer {
+  /* width: 100%; */
   background-color: var(--section-BGC);
   text-align: center;
   padding: 130px 140px;
@@ -354,6 +352,7 @@ footer ul li a {
 --------------------------- */
 
   footer {
+    width: auto;
     padding: 24px;
   }
   footer hr {
@@ -485,6 +484,7 @@ footer ul li a {
 --------------------------- */
 
   footer {
+    width: auto;
     padding-top: 70px;
     padding-left: 50px;
     padding-right: 50px;
@@ -547,7 +547,7 @@ footer ul li a {
   .hero_section .wlc_image img {
     width: 100%;
     height: auto;
-    margin-bottom: -19px;
+    margin-bottom: -7px;
   }
   /* --------------------------
        For Blogs section
@@ -589,6 +589,7 @@ footer ul li a {
 --------------------------- */
 
   footer {
+    width: auto;
     padding-top: 70px;
     padding-left: 50px;
     padding-right: 50px;
@@ -612,5 +613,78 @@ footer ul li a {
   }
   .item_2 {
     grid-column: 4 / 3;
+  }
+}
+
+/* -- 
+
+
+
+--------------------------
+       For Large Devices
+---------------------------
+
+
+
+
+-- */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .max_width {
+    width: auto;
+  }
+  /* --------------------------
+       For Header section
+--------------------------- */
+  .hero_section .wel_text {
+    margin: 0px 25px 111px 5%;
+  }
+  .hero_section .wel_text h1 {
+    font-size: 50px;
+  }
+  .hero_section .wel_text p {
+    font-size: 14px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .hero_section .wlc_image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -7px;
+  }
+
+  /* --------------------------
+       For Blogs section
+--------------------------- */
+
+  .blogs_container {
+    margin: 2% auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blogs_container aside {
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+  }
+  .blogs_container aside a {
+    border: 1px solid #e8e8e8;
+    margin: 0 20px;
+  }
+
+  .blogs {
+    margin: 0 3%;
+    display: grid;
+  }
+
+  footer {
+    width: 90%;
+    padding: 80px 5%;
   }
 }
