@@ -174,3 +174,46 @@ body {
 .blogs .details .comment span i {
   padding-right: 10px;
 }
+
+/* --------------------------
+       Footer section Style
+--------------------------- */
+
+footer {
+  background-color: var(--section-BGC);
+  text-align: center;
+  padding: 130px 140px;
+  color: #ffffff;
+}
+
+footer hr {
+  width: 100%;
+  opacity: 30%;
+  margin: 50px auto;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 898px;
+}
+footer ul li {
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+footer ul li:hover {
+  background-color: var(--main-color);
+}
+footer ul li a {
+  text-decoration: none;
+  color: #b9b9b9;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
