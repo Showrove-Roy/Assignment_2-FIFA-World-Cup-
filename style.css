@@ -31,6 +31,10 @@ body {
   width: 1320px;
   margin: auto;
 }
+.acctive {
+  background-color: var(--main-color) !important;
+  color: #ffffff !important;
+}
 
 /* --------------------------
         Header section Style
@@ -86,6 +90,87 @@ body {
 }
 
 .hero_section .wlc_image img {
-  width: 581px;
+  width: 580px;
   height: 613px;
+  margin-bottom: -7px;
+}
+
+/* --------------------------
+        Blogs section Style
+--------------------------- */
+.blogs_container {
+  display: flex;
+  margin: 130px auto;
+}
+
+.blogs_container aside {
+  background-color: var(--section-BGC);
+  width: 312px;
+  height: 312px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blogs_container aside a {
+  text-decoration: none;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--section-BGC);
+  background-color: #ffffff;
+  width: 252px;
+  margin: 20px auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+
+.blogs_container aside a:hover {
+  transform: scale(1.1);
+}
+
+.blogs {
+  width: calc(100%-312px);
+  margin-left: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.blogs article {
+  width: 312px;
+  height: 362px;
+  border-radius: 5px;
+  border: 1px solid #00000012;
+}
+
+.blogs .blog_btn {
+  border-radius: 5px;
+  border: 1px solid #0000005a;
+  background-color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--section-BGC);
+  padding: 4px 16px;
+}
+.blogs .details {
+  padding: 20px;
+}
+.blogs .details h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 15px 0 20px 0;
+}
+
+.blogs .details .comment span {
+  padding-right: 30px;
+}
+.blogs .details .comment span i {
+  padding-right: 10px;
 }
