@@ -36,6 +36,26 @@ body {
   color: #ffffff !important;
 }
 
+/* ----------
+    For view all blog Button
+------------  */
+.show_all_btn {
+  display: none;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.show_all_btn button {
+  padding: 12px 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  background: #dd0000;
+  border-radius: 5px;
+  border-width: 0;
+}
 /* --------------------------
         Header section Style
 --------------------------- */
@@ -222,7 +242,7 @@ footer ul li a {
        Responsive css
 --------------------------- */
 /* --------------------------
-       For X-samm Devices
+       For X-Small Devices
 --------------------------- */
 @media only screen and (max-width: 576px) {
   /* --------------------------
@@ -334,5 +354,117 @@ footer ul li a {
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+}
+
+/* -- 
+
+
+
+--------------------------
+       For Mid Devices
+---------------------------
+
+
+
+
+-- */
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .max_width {
+    width: auto;
+  }
+  /* --------------------------
+       For Header section
+--------------------------- */
+
+  .hero_section {
+    width: 80%;
+    padding: 5% 10% 0 10%;
+  }
+
+  .hero_section .wel_text {
+    margin: 0px 25px 111px 0px;
+  }
+  .hero_section .wel_text h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .hero_section .wel_text p {
+    font-size: 14px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hero_section .wlc_image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -19px;
+  }
+  /* --------------------------
+       For Blogs section
+--------------------------- */
+  .blogs_container {
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 50px;
+  }
+
+  .blogs_container aside {
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  .blogs_container aside a {
+    margin: 20px 11px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 200px;
+    border: 1px solid #e8e8e8;
+  }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+  }
+
+  .blogs article.hide_items {
+    display: none;
+  }
+  .show_all_btn {
+    display: block;
+  }
+
+  /* --------------------------
+       For Footer section
+--------------------------- */
+
+  footer {
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 55px;
+  }
+  footer hr {
+    margin: 30px auto;
+  }
+  footer ul {
+    width: 635px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: stretch;
+  }
+  footer ul li {
+    padding: 10px;
+  }
+
+  .item_1 {
+    grid-column: 2 / 3;
+  }
+  .item_2 {
+    grid-column: 4 / 3;
   }
 }
