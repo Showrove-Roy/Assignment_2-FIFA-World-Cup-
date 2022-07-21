@@ -237,8 +237,43 @@ footer ul li a {
 }
 
 /* --------------------------
-       Responsive css
+       For socialmedia sectino
 --------------------------- */
+.social_area {
+  margin: 50px 8rem 0 8rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social_area a {
+  text-decoration: none;
+}
+.social_area a i {
+  /* margin: 0 2rem; */
+  color: white;
+  font-size: 2.5rem;
+}
+.social_area a i:hover {
+  color: var(--main-color);
+}
+/* --------------------------------------------------
+  -
+    -
+      -
+        - 
+          - 
+            -
+               Responsive css
+            -
+          -
+         -
+        - 
+      - 
+    -
+  - 
+  
+-------------------------------------------------- */
 
 /* -- 
 
@@ -363,6 +398,15 @@ footer ul li a {
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+
+  .social_area {
+    border: none;
+    margin: 1.5rem 0 0 0;
+    justify-content: space-around;
+  }
+  .social_area a i {
+    font-size: 1.5rem;
   }
 }
 
@@ -501,6 +545,10 @@ footer ul li a {
   }
   footer ul li {
     padding: 10px;
+  }
+  .social_area {
+    border: none;
+    margin: 2rem 0 0 0;
   }
 }
 /* -- 
@@ -742,7 +790,3 @@ article .match_info p {
   color: #4d4d4d;
   margin-top: 10px;
 }
-
-
-
-Matches Page Done wiith Responsive
