@@ -688,3 +688,61 @@ footer ul li a {
     padding: 80px 5%;
   }
 }
+
+/* --------------------------------------------------
+  -
+    -
+      -
+        - 
+          - 
+            -
+               Secondary Page CSS
+            -
+          -
+         -
+        - 
+      - 
+    -
+  - 
+  
+-------------------------------------------------- */
+
+article#match_details {
+  width: 312px;
+  height: 242px;
+  /* padding: 50px 30px; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+article .flag {
+  display: flex;
+}
+article .flag h3 {
+  margin: 0 20px;
+}
+
+article .match_info h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #161616;
+}
+article .match_info p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #4d4d4d;
+  margin-top: 10px;
+}
+
+
+
+Matches Page Done wiith Responsive
